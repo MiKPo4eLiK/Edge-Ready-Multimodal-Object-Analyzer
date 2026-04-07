@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: url("/static/background.png");
+    background-size: cover;
+    background-position: center;
+
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+
+.container {
+    text-align: center;
+    position: relative;
+
+    padding: 90px;
+    border-radius: 30px;
+
+    width: 720px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    box-shadow: 0 40px 80px rgba(0,0,0,0.4);
+
+    margin-right: 550px;
+    margin-top: 300px;
+}
+
+.subtitle {
+    font-weight: bold;
+    font-size: 40px;
+    opacity: 0.9;
+}
+
+button,
+.button {
+    padding: 14px 28px;
+    font-size: 26px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #5a181b;
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    display: inline-block;
+
+    align-self: center;
+}
+
+button:hover,
+.button:hover {
+    background: #5148d8;
+}
+
+.upload-btn {
+    margin-top: 30px;
+    display: inline-block;
+
+    padding: 12px 20px;
+    font-size: 26px;
+
+    background: #9b4f17;
+    color: white;
+
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.upload-btn input {
+    display: none;
+}
+
+#fileName {
+    margin-top: 10px;
+    font-size: 22px;
+    opacity: 0.9;
+}
+
+.result {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.confidence {
+    font-size: 26px;
+    opacity: 0.9;
+}

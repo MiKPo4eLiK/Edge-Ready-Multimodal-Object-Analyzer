@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MemeSense</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<p class="subtitle">
+Find out what your meme actually is
+</p>
+
+<form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+
+<label class="upload-btn">
+    Choose meme
+    <input type="file" name="image" id="fileInput" required>
+</label>
+
+<p id="fileName">No file selected</p>
+<br><br>
+<button type="submit">Classify</button>
+</form>
+
+</div>
+
+<script>
+const input = document.getElementById("fileInput");
+const fileName = document.getElementById("fileName");
+
+input.addEventListener("change", function() {
+    if (input.files.length > 0) {
+        fileName.textContent = input.files[0].name;
+    }
+});
+</script>
+
+</body>
