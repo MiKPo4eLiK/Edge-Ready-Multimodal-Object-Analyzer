@@ -146,17 +146,17 @@ python -m ml.predict "data/test/dark_humor_meme/dark_humor (259).jpg"
 ## Interface
 
 **Main Page**
-![Main Page](screenshots/MemeSense_page_1.png)
-![Main Page](screenshots/MemeSense_page_1(1).png)
+![Main Page](MemeSense_page_1.png)
+![Main Page](MemeSense_page_1(1).png)
 
 **Result Page**
-![Result Page](screenshots/MemeSense_page_2.png)
+![Result Page](MemeSense_page_2.png)
 
 **Training vs Validation loss**
-![Training vs Validation loss](screenshots/MemeSense_training_validation_loss.png)
+![Training vs Validation loss](MemeSense_training_validation_loss.png)
 
 **Validation accuracy**
-![Validation accuracy](screenshots/MemeSense_validation_accuracy.png)
+![Validation accuracy](MemeSense_validation_accuracy.png)
 
 
 ## 📁 Project Structure
