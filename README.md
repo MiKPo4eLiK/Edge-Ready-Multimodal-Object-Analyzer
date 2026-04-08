@@ -1,4 +1,7 @@
-**MemeSense**
+**Edge-Ready Multimodal Object Analyzer: MemeSense**
+
+**MemeSense** is my original multimodal AI project, now enhanced and deployed 
+as the **Edge-Ready Multimodal Object Analyzer**.
 
 MemeSense is a multimodal AI system that automatically classifies memes into categories using 
 both **image content** and **text extracted from the meme**.
